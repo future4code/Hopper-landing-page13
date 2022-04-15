@@ -1,0 +1,433 @@
+/*---Gerais---*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.center {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/*Menu*/
+
+
+.logo-home{
+    width: 50px;
+    border-radius: 25%;
+}
+
+body{
+    background-color: white;
+    margin-right: 0px;
+    padding: 0px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.section1{
+    min-height: 95vh;
+    padding-bottom: 30px;
+    background-image: url(./img/1551f94fd7e690cf7cb050629eed1834.jpg);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+
+/* Estilo Navegador */
+
+nav {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a{
+    margin: 10px 30px;
+    font-family: Verdana;
+    color:rgb(255, 255, 255);
+    font-size: 15px; 
+    font-weight: 700;
+}
+
+.BTconta{
+    height: 50%;
+    font-size: 20px;
+    font-family: tahoma;
+    border:none;
+    border-radius: 10px;
+    background-color: #eea914;
+    color: #f5f5f5;
+    cursor:pointer;
+	outline: none;
+	font-weight: bold;
+	padding: 10px 18px;
+	letter-spacing: 1px;
+
+}
+
+.BTconta:hover{
+    background-color: #42d41e;
+    Color: #fff;
+    height: 52%;
+    font-size: 22px;
+    border-radius: 0;
+    transition-duration: 1s;
+}
+
+.icone {
+    color: white;
+    font-size: 22px;
+    margin: 0 10px;
+    display: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Section 1 - Texto Boas Vindas*/
+
+#banner {
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+#caixa-banner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#texto-home {
+    height: 100%;
+    max-width: 500px;
+    padding: 10px;
+    filter: drop-shadow(0 0 20px #000);
+    margin: 45px 0px 25px;
+    display: flex;
+}
+
+#texto-home p:nth-child(1){
+    font-family: 'calibre';
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 22px;
+}
+
+#texto-home p:nth-child(2){
+    font-family: 'calibri';
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    font-size: 60px;
+
+}
+
+#texto-home p:nth-child(3){
+    font-family: 'myriad pro regular';
+    color: whitesmoke;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+/* .texto-home {
+    line-height: 0px;
+    margin: 45px 0px 25px;
+    left: 100%;
+    top: 50%;
+    transform: translate(5%, 100%);
+    filter: drop-shadow(0 0 20px #000);
+} */
+
+/* Imagens Background */
+
+#caixa-imagens {
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.celular{
+    max-height: 350px;
+}
+
+.cartao{
+    max-height: 200px;
+}
+
+/* Section 2 - Video */
+
+.section2{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#container-video {
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    /*position: relative;
+    padding: 20px;
+    padding-bottom: 36.5%;*/
+}
+
+#container-video iframe {
+    width: 90%;
+    height: 90%;
+    border-radius: 15px;
+}
+
+/* #video {
+    margin: 0 auto;
+    background-color: #42d41e;
+    display: flex;
+    padding: 20px;
+}
+
+#video iframe{
+    border-radius: 15px;
+    margin: 0 auto;
+    background-color: #000;
+} */
+
+.texto-video{
+    text-align: center;
+    font-family: 'calibri';
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+}
+
+/* Section 3 */
+
+.section3{
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.caixas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box1{
+    background-color: #eea914;
+}
+
+.box2{
+    background-color: #f7dba0;
+}
+
+.box3{
+    background-color: #7e632a;
+}
+
+.box1, .box2, .box3 {
+   width: 350px;
+   height: 350px;
+   margin: 10px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   border-radius: 10%;
+   color: #f5f5f5;
+}
+
+.box1 span, 
+.box2 span,  
+.box3 span {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    font-family: calibri;
+    font-weight: bold;
+    margin-top: 10px;
+    align-items: center;
+} 
+
+/* Section 4 */
+
+.section4{
+    background-image: url(./img/1551f94fd7e690cf7cb050629eed1834.jpg);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.abrir-conta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-section4{
+    font-size: 4rem;
+    filter: drop-shadow(0 0 20px #000);
+    color: #fff;
+    padding: 10px;
+}
+
+.celular-section4{
+    width: 100%;
+}
+
+/* Rodape da Pagina*/
+
+footer{
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Página Sobre */
+
+.section1-sobre{
+    
+        min-height: 95vh;
+        padding-bottom: 30px;
+        background-color: #eea914;
+        position: relative;
+        
+    }
+#texto-sobre> h1{
+    font-size: 5em;
+    text-align: center;
+    margin-bottom: 1em;
+    padding: 1em;
+    font-family: tahoma;
+    filter: drop-shadow(0 0 1em rgb(240, 239, 239));
+}
+#texto-sobre> h3{
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: tahoma;
+    filter: drop-shadow(0 0 1em rgb(250, 249, 249));
+}
+.container-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5em;
+
+
+
+}
+#container-img{
+    height: 25%;
+    width: 50%;
+    margin-right: 2em;
+    padding-top: 5%;
+    
+}
+ .img-pequeno{
+    max-width: 300px;
+    display: block;
+   
+} 
+.titulo-sobre{
+    font-size: 2em;
+}
+.container-texto, h2{
+font-size: 1.125rem;
+line-height: 1.0rem;
+margin-left: 0;
+padding: 1em;
+text-align: center;
+font-family: tahoma;
+
+
+
+}
+
+/*------Media Query------*/
+@media screen and (max-width: 680px) {
+    #banner {
+        padding-top: 0;
+        margin-top: 0;
+    }
+    #container-video {
+        height: 100%;
+    }
+    .nav ul {
+        display: none;
+        background-color: white;
+        padding: 10px;
+        z-index: 100;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        flex-direction: column;
+        box-shadow: 0 0 3px black;
+        border-radius: 5px 0 0 5px;
+    }
+
+    .nav ul li {
+        color: #000;
+        padding: 10px 0;
+    }
+
+    .nav ul a {
+        color: #000;
+    }
+
+    .icone {
+        display: block;
+    }
+
+    .texto-video {
+        font-size: 25px;
+    }
+
+    .texto-section4 {
+        font-size: 3rem;
+    }
+    .container-principal{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
