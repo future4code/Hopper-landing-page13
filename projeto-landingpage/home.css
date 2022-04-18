@@ -136,6 +136,7 @@ nav ul li a{
     font-weight: bold;
     color: whitesmoke;
     font-size: 22px;
+    text-align: center;
 }
 
 #texto-home p:nth-child(2){
@@ -144,6 +145,7 @@ nav ul li a{
     letter-spacing: 1px;
     color: whitesmoke;
     font-size: 60px;
+    text-align: center;
 
 }
 
@@ -152,6 +154,8 @@ nav ul li a{
     color: whitesmoke;
     font-size: 30px;
     line-height: 30px;
+    text-align: left;
+    text-align: center;
 }
 
 /* .texto-home {
@@ -174,11 +178,13 @@ nav ul li a{
 }
 
 .celular{
-    max-height: 350px;
+    max-width: 100%;
+    width: 300px;
 }
 
 .cartao{
-    max-height: 200px;
+    max-height: 50%;
+    height: 300px;
 }
 
 /* Section 2 - Video */
@@ -244,14 +250,17 @@ nav ul li a{
 
 .box1{
     background-color: #eea914;
+    background: url(./img/credito.jpg);
 }
 
 .box2{
     background-color: #f7dba0;
+    background: url(./img/emprestimo.jpg);
 }
 
 .box3{
     background-color: #7e632a;
+    background: url(./img/investimento.jpg);
 }
 
 .box1, .box2, .box3 {
@@ -281,6 +290,66 @@ nav ul li a{
     margin-top: 10px;
     align-items: center;
 } 
+
+.projetos1, .projetos2, .projetos3 {
+    font-size: 45px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000;
+    font-weight: 700;
+
+
+
+}
+
+    .animado1, .animado2, .animado3 {
+        box-sizing: border-box;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+        background-color: transparent;
+        border: 2px solid #e74c3c;
+        border-radius: 0.6em;
+        color: #e74c3c;
+        cursor: pointer;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-self: center;
+            -ms-flex-item-align: center;
+                align-self: center;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1;
+        margin: 20px;
+        padding: 1.2em 2.8em;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+      }
+      .animado1:hover, .animado1:focus,
+      .animado2:hover, .animado2:focus,
+      .animado3:hover, .animado3:focus   {
+        color: #fff;
+        outline: 0;
+      }
+
+      .animado12, .animado22, .animado33  {
+        border-color: #f1c40f;
+        color: rgb(2, 2, 2);
+        background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+        background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+        background-position: 100%;
+        background-size: 400%;
+        -webkit-transition: background 300ms ease-in-out;
+        transition: background 300ms ease-in-out;
+      }
+      .animado12:hover, .animado22:hover, .animado33:hover {
+        background-position: 0;
+      }
+
 
 /* Section 4 */
 
@@ -382,7 +451,10 @@ footer ul li {
    align-items: center;
    flex-direction: column;
    border-radius: 4%;
-   color: #f5f5f5;
+   color: #000000;
+   filter: drop-shadow(0 0 20px #000);
+   
+   
 }
 
 .boxTrabalho span{
@@ -395,6 +467,8 @@ footer ul li {
     font-weight: bold;
     margin-top: 10px;
     align-items: center;
+    filter: drop-shadow(0 0 20px #000);
+    
 } 
 
 .div-button{
@@ -449,9 +523,10 @@ footer ul li {
 
 .boxContato{
     padding-top: 30px;
-    padding-right: 85px;
+    padding-right: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
+    filter: drop-shadow(0 0 20px #000);
 }
 
 
@@ -471,6 +546,7 @@ h1 {
     margin-left: 20px;
     color: #000000;
     text-shadow: 5px 5px 5px black;
+    text-align: center;
 }
 
 input, textarea {
@@ -482,6 +558,9 @@ input, textarea {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border: 1px solid;
+    text-align: center;
+    display: grid;
+    margin: 0 auto;
 }
 
 input:hover, textarea:hover, input:focus, textarea:focus {
@@ -490,6 +569,7 @@ input:hover, textarea:hover, input:focus, textarea:focus {
     background-color: #FFFF00;
     color: black;
     font-weight: bold;
+    text-align: center;
 }
 
 .enviar {
@@ -502,19 +582,22 @@ input:hover, textarea:hover, input:focus, textarea:focus {
     -moz-border-radius: 5px;
     border: 1px solid;
     color: black;
+    text-align: center;
 }
 
 textarea {
     width: 400px;
     height: 120px;
     line-height: 20px;
-    max-width: 400px;
+    max-width: 340px;
+    text-align: center;
 }
 
 form label {
     margin-left: 20px;
     color: #000000;
     font-weight: bold;
+    text-align: center;
 }
 
 
@@ -527,6 +610,7 @@ form label {
     #container-video {
         height: 100%;
     }
+
     .nav ul {
         display: none;
         background-color: white;
@@ -557,7 +641,101 @@ form label {
         font-size: 25px;
     }
 
-    .texto-section4 {
+    .texto-section4,.container-texto {
         font-size: 3rem;
     }
+
+
 }
+
+/* Página Sobre */
+
+
+
+#texto-sobre> h1{
+font-size: 5em;
+text-align: center;
+margin-bottom: 1em;
+padding: 1em;
+font-family: tahoma;
+filter: drop-shadow(0 0 1em rgb(240, 239, 239));
+}
+#texto-sobre> h3{
+font-size: 2.5em;
+text-align: center;
+margin-bottom: 1em;
+font-family: tahoma;
+filter: drop-shadow(0 0 1em rgb(250, 249, 249));
+}
+.container-principal{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 100%;
+padding: 5em;
+
+
+
+}
+#container-img{
+height: 25%;
+width: 50%;
+margin-right: 2em;
+padding-top: 5%;
+
+}
+.img-pequeno{
+max-width: 300px;
+display: flex;
+
+} 
+.titulo-sobre{
+font-size: 2em;
+}
+
+/* Section Texto Sobre */
+
+.section-sobre{
+    min-height: 95vh;
+    padding-bottom: 30px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+.texto-completo1 {
+    width: 95%;
+    height: 100%;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000000;
+    
+}
+
+.texto-completo1 span{
+    width: 3rem;
+    height: 3rem;
+    font-family: calibri;
+    font-weight: bold;
+    margin-top: 10px;
+    
+} 
+
+
+.titulo-sobre1{
+    font-size: clamp(1.75em, 1em + 4vw, 2.5em);
+    filter: drop-shadow(0 0 20px #000);
+    text-align: center;
+
+}
+.container-texto1{
+    font-size: clamp(1.75em, 1em + 2vw, 1.5em);
+    filter: drop-shadow(0 0 20px #000);
+    text-align: center;
+}
+
+
